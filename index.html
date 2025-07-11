@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Rakhi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <img src="./photo1.jpeg" alt="Rakshabandhan moment" class="banner-pic" />
+
+  <h1>Happy Rakshabandhan ❤️</h1>
+  <p class="sub">Drag a rakhi and tie it on my hand 🤝</p>
+
+  <div class="container">
+    <!-- ✅ CHANGED from <img> to <div> so you can drop rakhi inside -->
+    <div class="hand-area" id="hand-img"></div>
+    
+
+    <div class="rakhi-options">
+      <!-- ✅ IMAGE EXTENSIONS CHANGED to .png for transparency (recommended) -->
+      <img src="./rakhi1.jpg" class="rakhi" draggable="true" />
+      <img src="./rakhi2.jpg" class="rakhi" draggable="true" />
+    </div>
+  </div>
+
+  <div id="message" class="hidden">
+    🎁 "Tied by love, distance can't untie." 🎁
+  </div>
+<audio autoplay loop>
+  <source src="./song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div id="typewriter" class="hidden"></div>
+ 
+<button id="show-letter" class="hidden">💌 Read My Letter</button>
+
+<div id="letter-popup" class="hidden">
+  <div class="letter-box">
+    <p id="letter-text">
+      <!-- Your message will go here -->
+      My dearest sister,  
+      Even though we’re far apart this Rakhi,  
+      I hope you know how much I miss you,  
+      how proud I am of the bond we share,  
+      and how you're always with me — no matter the miles.  
+      💖 Your brother.
+    </p>
+    <button onclick="document.getElementById('letter-popup').classList.add('hidden')">Close</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
