@@ -73,7 +73,7 @@ handArea.addEventListener('drop', e => {
   rakhiImg.style.top = `${y - 40}px`;
 
   handArea.appendChild(rakhiImg);
-  message.classList.remove('hidden');
+  
 
   confetti({
     particleCount: 150,
@@ -81,4 +81,5 @@ handArea.addEventListener('drop', e => {
     origin: { y: 0.6 }
   });
 });
+
 
